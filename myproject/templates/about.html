@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <title>About</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hello from About</h1>
-      <p>Check out <a href="/">home</a> page</p>
-    </div>
-  </body>
-</html>
+{% extends 'layout.html' %} 
+
+{% block title %} 
+  About Page 
+{% endblock%} 
+
+{% block content %}
+<div class="container">
+  <h1>Hello from About</h1>
+  <p>
+    Check out
+    <a href="/">home</a>
+    page
+  </p>
+</div>
+{% endblock%}
