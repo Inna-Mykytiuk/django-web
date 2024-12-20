@@ -13,7 +13,7 @@
         {% for post in posts %}
           <article class="post">
             <h2 class="subtitle">
-              <a class="link" href={% url 'posts:page' slug=post.slug %}>
+              <a class="link" href="{% url 'posts:page' slug=post.slug %}">
                 {{ post.title }}
               </a>
             </h2>
