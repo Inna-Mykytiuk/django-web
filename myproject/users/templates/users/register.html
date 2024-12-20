@@ -7,7 +7,14 @@
 {% block content %}
   <section>
     <div class="container">
-      <h1 class="title">Register a New User</h1>
+      <div class="wrapper">
+        <h1 class="title">Register a New User</h1>
+        <form class="form-with-validation" action="/users/register/" method="post">
+          {% csrf_token %}
+          {{ form }}
+            <button class="form-submit">Submit</button>
+        </form>
+      </div>
     </div>
   </section>
 {% endblock%}
