@@ -1,7 +1,7 @@
 from django import forms
-from .models import Post
+from . import models
 
-class CreatePosts(forms.ModelForm):
+class CreatePost(forms.ModelForm):
   class Meta:
-    model = Post
+    model = models.Post
     fields = ['title', 'body', 'slug', 'banner']

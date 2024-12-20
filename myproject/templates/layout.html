@@ -11,7 +11,7 @@
   <body>
     <nav class="nav">
       <a href="/" title="home">Home</a>
-      {% comment %} <a href="/about">About</a> {% endcomment %}
+      <a href="/about">About</a>
       <a href="{% url "posts:list" %}">Posts</a>
 
       {% if user.is_authenticated %}
