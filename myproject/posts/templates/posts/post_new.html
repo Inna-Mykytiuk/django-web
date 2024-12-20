@@ -1,0 +1,18 @@
+{% extends 'layout.html' %} 
+
+{% block title %} 
+  New Post
+{% endblock%} 
+
+{% block content %}
+  <section>
+    <div class="container">
+      <h1 class="title">New Post</h1>
+      <form class="form-with-validation" action="{% url 'posts:new-post' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %} 
+        {{ form }}
+        <button class="form-submit">Add Post</button>
+      </form>
+    </div>
+  </section>
+{% endblock%}
