@@ -12,7 +12,11 @@
       <div class="wrapper">
         {% for post in posts %}
           <article class="post">
-            <h2 class="subtitle">{{ post.title }}</h2>
+            <h2 class="subtitle">
+              <a class="link" href={% url 'posts:page' slug=post.slug %}>
+                {{ post.title }}
+              </a>
+            </h2>
             <p class="date">{{ post.date }}</p>
             <p class="text">{{ post.body }}</p>
           </article>

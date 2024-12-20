@@ -144,9 +144,9 @@ nav a {
   font-size: 20px;
 }
 
-.title, .greet-text {
+.title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .greet-text {
@@ -161,11 +161,11 @@ nav a {
 .post {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .date {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .text {
